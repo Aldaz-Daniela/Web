@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>If Statement Example 1</title>
+    <script type="text/javascript">
+        var i = 24;
+        	var h1=+prompt("Ingresa hora 1");
+        	var m1=+prompt("Ingresa min 1");
+        	var s1=+prompt("Ingresa seg 1");
+            var hora1=h1*3600+m1*60+s1;
+        
+
+        	var h2=+prompt("Ingresa hora 2"); //lo toma como cadena
+        	var m2=+prompt("Ingresa min 2");
+        	var s2=+prompt("Ingresa seg 2");
+            
+            var hora2=h2*3600+m2*60+s2;
+
+            if( hora1>hora2){
+                hora1=hora1-hora2;
+            }
+            else{
+                hora1=hora2-hora1;
+            }
+            h1=hora1/3600;
+            m1=(hora1/60)%60;
+            s1=hora1%60;
+
+            prompt("Diferencia\nH:   "+Math.trunc(h1)+"  M:   "+Math.trunc(m1)+"  S:  "+s1);
+
+    
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>
